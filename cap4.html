@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Capítulo 4 – A indústria calçadista</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Matemática</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Sumário</a></li>
+				<li><a href="cap1.html" >Capítulo 1</a></li>
+				<li><a href="cap2.html">Capítulo 2</a></li>
+				<li><a href="cap3.html">Capítulo 3</a></li>
+				<li><a href="cap4.html" class="active">Capítulo 4</a></li>
+				<li><a href="cap5.html">Capítulo 5</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<input type="button" style="margin-top: 1vw;" value="Imprimir" onClick="window.print()" />
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<!--2 parte-->
+			<div class="inner">
+				<h1 class="major">Capítulo 4 – A indústria calçadista</h1>
+				<h3>MATRIZES E DETERMINANTES NO CONTEXTO DA INDÚSTRIA CALÇADISTA</h3>
+				<b>Contextualizando</b>
+				<p>
+					<span class="image left"><img src="./images/image157.jpg" alt="" /></span>
+						No mundo atual, torna-se cada vez mais
+						evidente que as empresas, em especial as
+						indústrias, precisam otimizar seus sistemas
+						produtivos para poder competir no mercado.
+						As pesquisas referentes à gestão de custos
+						abordam o desenvolvimento, a validação e a
+						aplicação de novos modelos e algoritmos de
+						cálculo que possibilitem a implementação de
+						soluções eficazes e eficientes. Uma ferramenta
+						matemática comprovadamente eficaz para a
+						otimização de custos é o ABC Matricial que tem por base a multiplicação de matrizes.
+				</p>
+				<p>
+					Aplicada na indústria calçadista essa ferramenta matemática, específica para a gestão de
+					custos de um produto, oferece um algoritmo simples e flexível que pode ser aplicado em um
+					software que possibilite, inclusive, a simulação do custo de produtos, para as melhores
+					tomadas de decisão.
+				</p>
+				<p>
+					Comprovadamente, na Matemática, as matrizes oferecem às indústrias e também ao comércio
+					algoritmos e formas de otimizar, por exemplo os custos e os controles de vendas.
+				</p>
+				<p>
+					O que é uma Matriz, essa ferramenta matemática que oferece formas simples de representar
+					sistemas produtivos? E, o que são determinantes?
+				</p>
+				<blockquote>
+					Caro aluno! <br><br>
+					Nesse capítulo, vamos estudar Matrizes e Determinante, um tema
+					do campo algébrico que nos possibilita desenvolver habilidades de
+					resolução de problemas complexos como os relacionados aos
+					algoritmos de cálculo que otimizam a custos. 
+				</blockquote>
+				<h4>(RE)CONSTRUINDO CONHECIMENTOS</h4>
+				<h5>MATRIZES</h5>
+				<p>
+					No nosso dia a dia, frequentemente lidamos com elementos dispostos em linhas (filas
+					horizontais) e colunas (filas verticais), que formam uma tabela ou um quadro retangular. Em
+					linguagem Matemática, este quadro ou tabela que pode ser escrito com os elementos
+					dispostos em linhas e colunas é denominado Matriz.
+				</p>
+				<p>Vejamos dois exemplos de matrizes, associando-as ao seu uso:</p>
+				<b>Exemplo 1</b>
+				<p>
+					Observe na tabela a seguir, o número de carros dos tipos A, B e C vendidos em uma agência,
+					durante uma semana:
+				</p>
+				<div class="img">
+					<img src="./images/image158.png" alt="">
+				</div>
+				<p>Agora, observe a tabela representada na forma de uma matriz:</p>
+				<p>
+					Essa matriz tem três linhas (filas horizontais) e seis colunas (filas verticais). Nesse caso, tratase de uma matriz 3 x 6. Esse produto (3 x 6) indica a ordem da matriz, o que a caracteriza.
+					Nesse produto, o multiplicador, o número 3, indica quantas linhas e o multiplicando, o
+					número 6, indica quantas colunas tem a matriz que, no caso é uma matriz retangular, porque
+					o número de linhas é diferente do número de colunas. O produto 3 x 6 indica a ordem da
+					matriz. Assim, dizemos que essa Matriz é de ordem 3 x 6, entendendo-se que ela tem 3 linhas
+					e 6 colunas e, portanto, 36 elementos. No produto que determina a ordem da matriz, o
+					primeiro fator que indica o número de linhas, genericamente, é representado pela letra m e o
+					segundo fator que indica o número de colunas é representado pela letra n. Quando indicamos,
+					genericamente, que uma matriz é de ordem m x n, dizemos que ela tem m linhas e n colunas.
+				</p>
+				<p>
+					Vejamos um exemplo: Dois trens de números 1 e 2, respectivamente, transportam material de
+					construção indo de duas localidades L1 e L2 até o local C, da construção. O primeiro trem faz
+					10 viagens de L1 até C e 8 de L2 até C. O segundo, faz 4 viagens de L1 até C e 6 de L2 até C.
+				</p>
+				<p>Observe o quadro a seguir:</p>
+				<div class="img">
+					<img src="./images/image159.png" alt="">
+				</div>
+				<p>
+					Representamos o quadro acima pela matriz A = <img src="./images/image160.png" alt="" class="unformat">
+					que também pode ser representado
+					por A = <img src="./images/image161.png" alt="" class="unformat"> ou A = <img src="./images/image162.png" alt="" class="unformat">.
+				</p>
+				<p>Na 1<sup>a</sup> linha, os elementos são 10 e 4. Na 2<sup>a</sup> , linha, os elementos são 8 e 6 Na 1<sup>a</sup> coluna, os elementos são 10 e 8. Na 2<sup>a</sup> coluna, os elementos são 4 e 6 Essa matriz tem 2 linhas e 2 colunas, sua ordem é 2 x 2. Como o número de linhas é igual ao número de colunas, esta matriz é denominada Matriz quadrada de ordem 2. Matrizes são formas simplificadas de representar uma informação e são nomeadas com as letras maiúsculas do nosso alfabeto. 1º 2º </p>
+				<h4>REPRESENTAÇÃO GENÉRICA DAS MATRIZES </h4>
+				<p>
+					Na matriz a seguir, temos que, cada elemento é denominado por um a, seguido de dois
+					números em que indicam a sua posição.
+				</p>
+				<p>	Observe que essa a tabela é uma matriz genérica de ordem m x n.</p>
+				<div class="img">
+					<img src="./images/image163.png" alt="">
+					<p>
+						Genericamente, dizemos que cada elemento de uma matriz é um elemento da forma aij em
+						que i representa a linha e j representa a coluna. Assim, para representar genericamente as
+						matrizes, utilizamos a disposição de uma tabela. Chamamos de matriz toda a tabela m x n (
+						lê-se “m por n”) em que números estão dispostos em linhas (m) e colunas (n). Cada elemento
+						da matriz é indicado por aij em que i indica a posição do elemento referente à linha, e j, a
+						posição em relação à coluna.
+					</p>
+					<p>Na matriz genérica apresentada, temos que:</p>
+				</div>
+				<div class="img">
+					<img src="./images/image164.png" alt="">
+				</div>
+				<p>
+					Muitas vezes, para resolver questões que envolvem matrizes, é conveniente compor matrizes
+					com elementos genéricos, a chamada Matriz Genérica isto é, uma Matriz que usa letras
+					minúsculas seguidas de índices numéricos que indicam a linha e a coluna, respectivamente,
+					como mostra o exemplo a seguir:
+				</p>
+				<div class="img">
+					<img src="./images/image165.png" alt="">
+				</div>
+				<p>A partir de uma matriz genérica, podemos compor diferentes matrizes.</p>
+				<p>Como procedemos para compor uma Mariz a partir da Matriz Genérica?</p>
+				<p>Vamos ver o procedimento para compor a Matriz A = (aij)2x2.</p>
+				<p>
+					Vamos compor uma Matriz quadrada de ordem 2, portanto, na sua determinação (A =
+					(aij)2x2 ), i= j em todos os termos da nova matriz em que a lei de composição da matriz é
+					seja aij = i + 3j Para cada termo da Matriz.
+				</p>
+				<p><b>Procedimentos:</b></p>
+				<p>1º Elabora-se a Matriz genérica referente à Matriz solicitada;</p>
+				<div class="img">
+					<img src="./images/image165-2.png" alt="">
+				</div>
+				<p>2º Observa-se a lei da Matriz aij = i + 3j</p>
+				<p>
+					3º A partir da lei aij = i + 3j e dos índices i, j dos elementos da Matriz, calculam-se os termos
+					da nova Matriz:
+				</p>
+				<div class="img">
+					<img src="./images/image166.png" alt="">
+				</div>
+				<p>4º Substituem-se os temos calculados na Matriz Genérica, compondo a nova matriz:</p>
+				<div class="img">
+					<img src="./images/image167.png" alt="">
+				</div>
+				<h4>TIPOS DE MATRIZES</h4>
+				<p>
+					De com as características, (o número de linhas e colunas e os seus componentes), há
+					diferentes tipos de matrizes. Ao definir as matrizes e seus elementos, já conhecemos as
+					matrizes retangulares e quadradas. Temos ainda:
+				</p>
+				<p>Matriz Linha: formada por uma única linha, por exemplo:</p>
+				<div class="img">
+					<img src="./images/image168.png" alt="">
+				</div>
+				<p>Matriz Coluna: formada por uma única coluna, por exemplo:</p>
+				<div class="img">
+					<img src="./images/image169.png" alt="">
+				</div>
+				<p>Matriz Nula: constituída por elementos iguais a zero, por exemplo:</p>
+				<div class="img">
+					<img src="./images/image170.png" alt="">
+				</div>
+				<p>
+					Matriz Transposta: indicada pela letra t, At é aquela que apresenta os mesmos elementos de
+					outra, sendo que os elementos das linhas da matriz A são os elementos das colunas da matriz
+					At , e os elementos das colunas da matriz A são os elementos da matriz At . Obtemos a
+					matriz transposta At, trocando as linhas pelas colunas da matriz A, por exemplo:
+				</p>
+				<div class="img">
+					<img src="./images/image171.png" alt="">
+				</div>
+				<p>
+					Matriz Oposta: indicada por –A é a matriz A cujos elementos são multiplicada por -1. Ou
+					seja> os elementos da matriz oposta –A são os opostos ou simétricos aos da Matriz A, por
+					exemplo:
+				</p>
+				<div class="img">
+					<img src="./images/image172.png" alt="">
+				</div>
+				<p>
+					Matriz Identidade: indicada por In é a matriz quadrada de ordem n cujos elementos da
+					diagonal principal são todos iguais a 1 e os demais elementos são iguais a 0 (zero). A matriz
+					identidade é o elemento neutro na multiplicação de matrizes., por exemplo:
+				</p>
+				<div class="img">
+					<img src="./images/image173.png" alt="">
+				</div>
+				<p>Igualdade de Matrizes</p>
+				<p>
+					Duas matrizes A e B são iguais quando têm os mesmo elementos nas linhas e colunas
+					correspondentes por exemplo:
+				</p>
+				<h4>VAMOS PRATICAR...</h4>
+				<p>1- Dada a matriz <img class="unformat" src="./images/image174.png" alt=""> determine sua ordem e indique o valor dos
+					elementos a21 e a14.
+				</p>
+				<p>2- Classifique as matrizes abaixo:</p>
+				<p>a) <img class="unformat" src="./images/image175.png" alt=""></p>
+				<p>b) <img class="unformat" src="./images/image176.png" alt=""></p>
+				<p>c) <img class="unformat" src="./images/image177.png" alt=""></p>
+				<h5>OPERAÇÕES COM MATRIZES</h5>
+				<p>
+					Vamos definir a adição, a subtração e a multiplicação de matrizes e, ainda, a multiplicação de
+					um número real por uma matriz.
+				</p>
+				<p>
+					A adição de matrizes é definida apenas para matrizes de mesma ordem, isto é,
+					matrizes que têm o mesmo número de linhas e colunas. Assim, se A = (aij)m×n e B =
+					(bij)m×n , diz-se que a soma de A + B é dada pela matriz C = (cij)m×n, que se obtém
+					adicionando os elementos correspondentes de cada uma delas.
+				</p>
+				<p>Exemplo:</p>
+				<p>Sejam as matrizes A e B:</p>
+				<div class="img">
+					<img src="./images/image178.png" alt="">
+				</div>
+				<p>
+					Concluindo: Para calcular a matriz C = A + B, basta somar seus elementos correspondentes
+					das matrizes A e B.
+				</p>
+				<p>
+					A subtração de matrizes é uma operação que só pode ser realizada com matrizes de mesma
+					ordem, isto é que tenham mesmo número de linhas e colunas. A subtração entre duas matrizes
+					A e B é obtida a partir da soma da matriz A com a oposta de B, ou seja, A – B = A + (-B).
+				</p>
+				<p>
+					Vejamos, agora, um exemplo da subtração de matrizes
+					Lembre que subtrair duas matrizes, basta somar a primeira com a oposta da segunda
+					Sejam as matrizes A e B:
+				</p>	
+				<div class="img">
+					<img src="./images/image179.png" alt="">
+				</div>
+				<p>A matriz C = A – B = A + (-B)</p> 
+				<p>Inicialmente é necessário calcular a matriz <img src="./images/image180.png" alt="" class="unformat">.</p>
+				<p>A seguir, calcula-se C = A – B = A + (-B) = <img src="./images/image181.png" alt="" class="unformat"> então, <img src="./images/image182.png" alt="" class="unformat"> </p>			
+				<p><b>Multiplicação de um número real por uma matriz</b></p>
+				<p>
+					Para multiplicar um número real por uma matriz, tomamos a matriz A de ordem mxn e um
+					número real k e multiplicamos todos os elementos da matriz A por k.
+				</p>
+				<p>
+					Seja a matriz e k um número real, diz-se que k . A é uma matriz do tipo m x n, obtida a partir
+					do produto entre k e todos os elementos da matriz A.
+				</p>
+				<p><b>Exemplo: </b></p>
+				<div class="img">
+					<img src="./images/image183.png" alt="">
+				</div>
+				<p><b>Multiplicação de matrizes</b></p>
+				<p>
+					Só é possível multiplicar duas matrizes A e B, se o número de colunas de A for igual ao
+					número de linhas de B, isto é, sendo A de ordem mxn, B deverá ser de ordem nxp, ficando a
+					matriz produto AxB com ordem mxp (p=m ou  &#8800; m e p> 0).
+				</p>
+				<p>Observe:</p>
+				<div class="img">
+					<img src="./images/image184.png" alt="">
+				</div>
+				<p>A matriz produto AxB(2x3) tem três linhas e duas colunas e é representada genericamente por <img class="unformat" src="./images/image185.png" alt=""></p>
+				<p>
+					Nessa matriz, o elemento α11 a é a soma dos produtos dos elementos da 1ª 
+					linha da matriz A pelos elementos da 1ª coluna da matriz B, o elemento α12 
+					é a soma dos produtos dos elementos da 1ª linha da matriz A, pelos elementos 
+					da 2ª coluna da matriz B, e assim, sucessivamente.
+				</p>
+				<p>Observar a seguinte situação-problema: Considerando o exemplo dos trens, a matriz obtida foi <img class="unformat" src="./images/image186.png" alt=""></p>
+				<p>
+					Suponhamos agora que os dois trens transportem toneladas de areia e cascalho, conforme a
+					especificação ao lado:
+				</p>
+				<div class="img">
+					<img src="./images/image187.png" alt="">
+				</div>
+				<p>Temos então a matriz <img class="unformat" src="./images/image188.png" alt=""></p>
+				<p>
+					Queremos calcular as quantidades totais de areia e cascalho que são carregadas de L1 para C
+					e de L2 para C. A resposta é obtida através da operação multiplicação de matrizes. Para
+					efetuar a multiplicação, é interessante fazer um dispositivo prático, como o que segue:
+				</p>
+				<div class="img">
+					<img src="./images/image189.png" alt="">
+				</div>
+				<p>
+					Para calcular cada elemento da matriz produto AxB multiplica-se cada elemento da primeira
+					linha da matriz A por um elemento da 1ª coluna da matriz B e somam-se os resultados:
+				</p>
+				<div class="img">
+					<img src="./images/image190.png" alt="">
+				</div>
+				<p>
+					Assim, para multiplicar duas matrizes, calcula-se a ordem da matriz resultante, a partir dessa
+					ordem, constrói-se a matriz genérica da matriz produto e, cada elemento da matriz produto é
+					calculado, observando seus índices. Por exemplo, para calcular o elemento a11 da matriz A x
+					B, multiplicam-se um a um, os elementos da primeira linha da matriz da matriz A pelos
+					elementos da primeira coluna da matiz B e somam-se os produtos e, assim, sucessivamente.
+				</p>
+				<p><b>VAMOS PRATICAR</b></p>
+				<p>1. Dadas as matrizes <img class="unformat" src="./images/image191.png" alt=""> calcule: </p>
+				<p>
+					a) A + B <br>
+					b) A + C <br>
+					c) A – C <br>
+					d) B + C <br>
+					e) A + B – C <br>
+					f) A.B – C <br>
+					g) 2.B <br>
+					h) 2.A + 3.C
+				</p>
+
+				<h4>DETERMINANTES</h4>
+				<p>VOCÊ SABIA?</p>
+				<p>
+					Uma das aplicações de Sistemas Lineares e Determinantes, junto com outros conceitos
+					matemáticos é no funcionamento de um GPS (O Sistema de Posicionamento Global GPS -
+					Global Positioning System).
+				</p>
+				<p>
+					A humanidade tem desenvolvido sistemas cada vez mais complexos e precisos para
+					determinar a localização exata de um indivíduo ou de algo sobre a Terra. O GPS foi
+					concluído em Julho de 1995 pelo Departamento de Defesa dos EUA, e seu uso foi autorizado
+					para o público geral. O sistema consiste de uma parte espacial (os satélites), uma parte de
+					controle (as estações terrestres de gerenciamento) e uma parte do usuário. Em 2005, o sistema
+					consistia de 32 satélites, sendo que 24 deles estariam em funcionamento, e o restante ficariam
+					prontos para entrar em ação em caso de falha. Os satélites estão posicionados a20.200km da
+					superfície da Terra, em seis planos orbitais.
+				</p>
+				<p>
+					Associado a toda a matriz quadrada A=[aij] (a que tem o número de linhas igual o número de
+					colunas), há um determinante que é um número real calculado, segundo uma determinada
+					lei.
+				</p>
+				<p>A notação para do número real que é o determinante da matriz <img class="unformat" src="./images/image192.png" alt="">
+					será det A ou <img class="unformat" src="./images/image193.png" alt=""> assim, a matriz A escrita ente duas barras também é lida determinante de A. 
+				</p>
+				<p>Podemos dizer que determinante de uma matriz quadrada é o seu valor numérico.</p>
+				<p>Os determinante podem ser de orden n, sendo n a ordem da matriz.</p>
+				<p>Determinante de primeira ordem ou de ordem 1:</p>
+				<p>Uma matriz de ordem 1 é uma matriz quadrada que tem 1 linha e 1 coluna, portanto é do tipo</p>
+				<div class="img">
+					<img src="./images/image194.png" alt="">
+				</div>
+				<p>
+					Podemos concluir que o determinante de ordem 1 terá o seu valor numérico sempre igual ao
+					seu elemento.
+				</p>
+				<p>Exemplos :</p>
+				<div class="img">
+					<img src="./images/image195.png" alt="">
+				</div>
+				<p><b>Determinante de segunda ordem ou de ordem 2:</b></p>
+				<p>Uma matriz de ordem 2 é uma matriz quadrada que tem 2 linhas e 2 colunas, portanto é do tipo <img class="unformat" src="./images/image196.png" alt=""></p>
+				<p>O determinante de ordem dois possui uma diagonal principal e uma diagonal secundária.</p>
+				<p>O determinante de ordem dois possui uma diagonal principal e uma diagonal secundária.</p>
+				<p>Exemplos :</p>
+				<div class="img">
+					<img src="./images/image197.png" alt="">
+				</div>
+				<p>
+						O cálculo do seu valor numérico é feito pela diferença do produto da diagonal principal com
+						o produto da diagonal secundária.
+				</p>
+				<div class="img">
+					<img src="./images/image198.png" alt="">
+				</div>
+				<p><b>Determinante de terceira ordem ou de ordem 3 :</b></p>
+				<p>Uma matriz de ordem 3 é uma matriz quadrada que tem 3 linhas e 3 colunas, portanto é do tipo:</p>
+				<p><img class="unformat" src="./images/image199.png" alt=""></p>
+				<p>
+					O determinante da matriz de terceira ordem é calculado pela soma dos produtos da diagonal
+					principal e suas paralelas menos os produtos da diagonal segundária e suas paralelas.
+				</p>
+				<p>Regra de Sarrus : </p>
+				<div class="img">
+					<img src="./images/image200.png" alt="">
+				</div>
+				<p>det A = P1 + P2 + P3 – P4 – P5 – P6</p>
+				<p>Exemplo :</p>
+				<div class="img">
+					<img src="./images/image201.png" alt="">
+				</div>
+				<h4>PRATICANDO...AÇÃO E REFLEXÃO</h4>
+				<p>Questões referentes ao estudo das Matrizes</p>
+				<p>1.) Dada a matriz <img class="unformat" src="./images/image202.png" alt=""> complete as lacunas referentes aos itens a seguir:</p>
+
+				<p>
+					a) Sua ordem é........ <br>
+					b) O elemento da 2<sup>a</sup> linha e 3<sup>a</sup> coluna é.... <br>
+					c) O elemento da 2<sup>a</sup> linha e 1<sup>a</sup> coluna é ....
+				</p>
+
+				<p>
+					2.) Complete os índices dos elementos das matrizes A, B e C e responda as pergunta
+					referentes a essas matrizes:
+				</p>
+				<div class="img">
+					<img src="./images/image203.png" alt="">
+				</div>
+
+				<p>
+					a) Qual o elemento da 2<sup>a</sup> linha e 3<sup>a</sup> coluna da matriz B?  <br>
+					b) Qual o elemento da 2<sup>a</sup> linha e 1<sup>a</sup> coluna da matriz C? <br>
+					c) Qual a ordem da matriz A?................Da matriz B?................Da matriz C?.................  <br>
+					d) Quais os elementos da diagonal principal da matriz A?...........E da matriz B?... <br>
+					e) Uma matriz é chamada quadrada, quando o número de linhas é igual ao número de colunas. Qual ou quais das matrizes acima é uma matriz quadrada?
+				</p>
+				<p>
+					4. Identifique a ordem dos determinantes e calcule-os, usando a Regra de Sarrus para calcular
+					o determinante das matrizes de terceira ordem:
+				</p>
+				<div class="img">
+					<img src="./images/image204.png" alt="">
+				</div>
+				<h4>O QUE APRENDI</h4>
+				<p>
+					Nesse capítulo, estudamos o conceito de Matrizes, uma ferramenta matemática com
+					aplicação no controle e otimização de processos produtivos, de compra e venda. Aprendemos
+					sobre sua representação e como compor matrizes a partir de uma matriz genérica e como
+					operar com Matrizes, reconhecendo que há diferentes tipos de matrizes. Complementamos
+					esse estudo conceituando determinante de uma matriz quadrada até a ordem 3 e verificamos
+					sua aplicabilidade na resolução de sistemas lineares. 
+				</p>
+				<p><b>RESPOSTAS DAS QUESTÕES DA SEÇÃO: VAMOS PRATICAR...</b></p>
+				<p>1- A matriz A possui 2 linhas e 4 colunas, portanto tem dimensão 2×4.</p>
+				<p>O elemento a21 é aquele que pertence à linha 2 e à coluna 1, portanto:</p>
+				<div class="img">
+					<img src="./images/image205.png" alt="">
+				</div>
+				<p>O elemento a14 é aquele que pertence à linha 1 e à coluna 4, portanto:</p>
+				<p>2- a) Matriz coluna.</p>
+				<p>
+					b) Matriz linha. <br>
+					c) Matriz quadrada. <br>
+				</p>
+				<p>
+					<img src="./images/image206.png" alt="" class="unformat">
+				</p>
+				<p><b>RESPOSTAS DAS QUESTÕES DA SEÇÃO: PRATICANDO... AÇÃO E REFLEXÃO</b></p>
+				<p>
+					<img src="./images/image207.png" alt="" class="unformat">
+				</p>
+				<p>
+					<img src="./images/image208.png" alt="" class="unformat">
+				</p>
+				<p>
+					<img src="./images/image209.png" alt="" class="unformat">
+				</p>
+				<p>
+					<img src="./images/image210.png" alt="" class="unformat">
+				</p>
+				<p>
+					<img src="./images/image211.png" alt="" class="unformat">
+				</p>
+			</div> <!--inner -->
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

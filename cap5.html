@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Capítulo 5 – o princípio da contagem e a análise
+		Combinatória no contexto dos processos
+		Produtivos da indústria</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Matemática</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Sumário</a></li>
+				<li><a href="cap1.html" >Capítulo 1</a></li>
+				<li><a href="cap2.html">Capítulo 2</a></li>
+				<li><a href="cap3.html">Capítulo 3</a></li>
+				<li><a href="cap4.html">Capítulo 4</a></li>
+				<li><a href="cap5.html" class="active">Capítulo 5</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<input type="button" style="margin-top: 1vw;" value="Imprimir" onClick="window.print()" />
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<!--2 parte-->
+			<div class="inner">
+				<h1 class="major">Capítulo 5 – o princípio da contagem e a análise
+					Combinatória no contexto dos processos
+					Produtivos da indústria
+				</h1>
+				<p><b>Contextualizando</b></p>
+				<p>
+					As questões cuja resolução envolve o princípio fundamental da contagem constituem modelos
+					muito utilizados nas indústrias tanto na criação dos processos produtivos como dos códigos
+					de barras.
+				</p>
+				<p>
+					Os processos produtivos são dinâmicos e constituem modelos de práticas de gestão que
+					possibilitam às organizações gerenciar seus resultados, proporcionando retornos positivos
+					tanto operacionais quanto financeiros.
+				</p>
+				<p>
+					Os códigos de barras servem como identificação de um produto para os lojistas. São códigos
+					utilizados em vários países cujo uso efetivo levou décadas para ser universalizado. No Brasil,
+					foi formalmente introduzido em 1984.
+				</p>
+				<p>
+					Que diferentes tipos de agrupamentos existem, o que os diferencia e como o princípio
+					fundamental da contagem é utilizado em sua resolução?
+				</p>
+				<blockquote>
+					Caro aluno, nesse capítulo, vamos estudar problemas de contagem
+					que usam o princípio multiplicativo que e integram a Análise
+					Combinatória. Vamos resolver muitos problemas com ou sem o uso
+					de fórmulas com o auxílio das árvores de contagem , dos quadros
+					de dupla entrada e da resolução por etapas um forma simplificada
+					de representação.
+				</blockquote>
+				<h4>(RE)CONSTRUINDO CONHECIMENTOS</h4>
+				<p>
+					A Análise Combinatória visa desenvolver métodos que permitam contar - de uma forma
+					indireta - o número de elementos de um conjunto, estando esses elementos agrupados sob
+					certas condições.
+				</p>
+				<p>
+					Na Análise Combinatória, é importante, conhecer os agrupamentos de diferentes naturezas e
+					sob certas condições possíveis de serem criados a partir de um conjunto de elementos os mais
+					diferenciados, bem como saber quantos são esses agrupamentos que podem ser calculados,
+					usando o princípio fundamental da contagem ou fórmulas que usam fatoriais. Os problemas
+					relacionados à Análise Combinatória são também problemas de contagem.
+				</p>
+				<h4>RELEMBRANDO A HISTÓRIA</h4>
+				<p>
+					<span class="image left"><img src="./images/image212.jpg" alt="" /></span>
+					Foi a necessidade de calcular o número de possibilidades existentes
+					nos chamados jogos de azar que levou ao desenvolvimento da Análise
+					Combinatória, parte da Matemática que estuda os métodos de contagem.
+					Esses estudos foram iniciados já no século XVI, pelo matemático italiano
+					Niccolò fontana (1500-1557), conhecido como Tartaglia e ampliados por
+					Pierre de Fermat (1601-1665) e Blaise Pascal (1623-1662) matemáticos
+					franceses que muito contribuíram para o desenvolvimento da Matemática.
+				</p>
+				<p>
+					Vamos resolver problemas envolvendo o princípio da contagem, também chamado princípio
+					multiplicativo e reconhecer que tipos de representação podemos utilizar para facilitar a sua
+					resolução..
+				</p>
+				<p>Observe o problema a seguir e sua resolução:</p>
+				<p>
+					<i>
+						Há quatro entradas ligando as cidades A e B e três ligando B e C. De quantas maneiras se
+						pode ir da cidade A até a cidade C, passando por B?
+					</i>
+				</p>
+				<p>Usando o diagrama de árvore:</p>
+				<div class="img">
+					<img src="./images/image213.png" alt="">
+				</div>
+				<p>
+					Observando diagrama de árvore representado acima, verificamos que, para ir da cidade A até
+					a cidade B, há quatro caminhos possíveis e que da cidade B até a cidade C, há 3 caminhos
+					possíveis. Assim, para cada um dos 4 caminhos para ir da cidade A até a cidade B, há três
+					diferentes caminhos para ir da cidade B até a cidade C. Assim, há 3 x 4 = 12 caminhos para
+					ir da cidade A até a cidade C, passando pela cidade B
+				</p>
+				<p>
+					Os diagramas de árvore prestam-se para representar a resolução de problemas de contagem
+					com dois ou mais conjuntos ou com um conjunto com duas ou mais etapas.
+				</p>
+				<p>Usando a representação por etapas ( uma forma simplificada de resolução):</p>
+				<div class="img">
+					<img src="./images/image214.png" alt="">
+				</div>
+				<p>
+					Observando a representação por etapas, , verificamos que, na primeira etapa, é 4 o número de
+					possibilidades de ir da cidade A até a cidade B e, na segunda etapa é 3 o número de
+					possibilidades de ir da cidade B até a cidade C. Assim, para cada uma das 4 possibilidades de
+					ir da cidade A até a cidade B, há três diferentes possibilidades de ir da cidade B até a cidade
+					C. Assim, há 3 x 4 = 12 possibilidades de ir da cidade A até a cidade C, passando pela
+					cidade B
+				</p>
+				<p>
+					A representação por etapas presta - se para a resolução de problemas com de contagem com
+					dois ou mais conjuntos ou com um conjunto com duas ou mais etapas.
+				</p>
+				<p>Para resolver o mesmo problema, pode-se usar, também, um quadro de dupla entrada.</p>
+				<div class="img">
+					<img src="./images/image215.png" alt="">
+				</div>
+				<p>
+					No quadro, na primeira linha, observa-se que, utilizando o caminho 1 de A até B, haverá três
+					possibilidades de seguir de B até C uma pelo caminho 1, outra pelo caminho 2 e ainda outra
+					pelo caminho 3 e, assim, sucessivamente nas quatro linhas, percebendo que são 4 x 3 = 12
+					caminhos diferentes para ir da cidade A até a cidade C, passando pela cidade B.
+				</p>
+				<p>
+					Os quadros de dupla entrada prestam-se para representar problemas de contagem que
+					relacionem elementos de somente dois conjuntos ou os que relacionam os elementos de um
+					conjunto com somente duas etapas.
+				</p>
+				<p>Outra representação:</p>
+				<p>
+					Pode-se representar de uma forma pessoal, conforme o desenho a seguir, contando os
+					caminhos percorridos, acompanhando com o lápis, de tal forma que para cada um dos 4
+					caminhos possíveis de A até B, verifiquem-se 3 caminhos possíveis de B até C, perfazendo
+					4 X 3= 12
+					caminhos da cidade A até a cidade C, passando pela cidade B.
+				</p>
+				<div class="img">
+					<img src="./images/image216.png" alt="">
+				</div>
+				Para prosseguir o estudo da Análise Combinatória vamos estudar <b>Fatorial</b>.<p></p>
+				<p>Fatorial é um número natural inteiro positivo que é representado por <b>n</b>!</p>
+				<p>É um número calculado pela multiplicação desse número por todos os seus sucessores até</p>
+				<p>chegar ao número 1. Note que nesses produtos, o zero (0) é excluído.</p>
+				<p>Vejamos alguns exemplos numéricos.</p>
+				<p><b>Fatorial de 0: 0</b>! (lê-se 0 fatorial) e por definição , é igual a 1.</p>
+				<p>0! = 1</p>
+				<p><b>Fatorial de 1</b>: 1! (lê-se 1 fatorial) e , por definição é igual a 1</p>
+				<p>1! = 1</p>
+				<p><b>Fatorial de 2</b>: 2! (lê-se 2 fatorial)</p>
+				<p>2! = 2 . 1 = 2</p>
+				<p><b>Fatorial de 3</b>: 3! (lê-se 3 fatorial)</p>
+				<p>3! = 3 . 2 . 1 = 6</p>
+				<p><b>Fatorial de 4</b>: 4! (lê-se 4 fatorial)</p>
+				<p>4! = 4. 3 . 2 . 1 = 24</p>
+				<p><b>Fatorial de 5</b>: 5! (lê-se 5 fatorial)</p>
+				<p>5! = 5 . 4 . 3 . 2 . 1 = 120</p>
+				<p><b>Fatorial de 6</b>: 6! (lê-se 6 fatorial)</p>
+				<p>6! = 6 . 5 . 4 . 3 . 2 . 1 = 720</p>
+				<p><b>Fatorial de 7</b>: 7! (lê-se 7 fatorial)</p>
+				<p>7! = 7 . 6 . 5 . 4. 3 . 2 . 1 = 5040</p>
+				<p><b>Fatorial de 8</b>: 8! (lê-se 8 fatorial)</p>
+				<p>8! = 8 . 7 . 6 . 5 . 4. 3 . 2 . 1 = 40320</p>
+				<p><b>Fatorial de 9</b>: 9! (lê-se 9 fatorial)</p>
+				<p>9! = 9 . 8 . 7 . 6 . 5 . 4. 3 . 2 . 1 = 362.880</p>
+				<p><b>Fatorial de 10</b>: 10! (lê-se 10 fatorial)</p>
+				<p>10! = 10 . 9 . 8 . 7 . 6 . 5 . 4. 3 . 2 . 1 = 3.628.800</p>
+				<p>Generalizando, sendo n um número natural qualquer o seu fatorial é representado por:</p>
+
+				<p>n! = n . (n – 1) . (n – 2) . (n – 3)... 3.2.1</p>
+				<p>Obs: O número fatorial também pode ser representado da seguinte maneira:</p>
+				<p>5!</p>
+				<p>5 . 4!;</p>
+				<p>5 . 4 . 3!;</p>
+				<p>5 . 4 . 3 . 2!</p>
+				<p>Esse processo é muito importante quando se utiliza a simplificação de números fatoriais.</p>
+				<p>Você sabia?</p>
+				<h4>O QUE DIFERENCIA A ORDEM E NATUREZA NOS AGRUPAMENTOS</h4>
+				<p>
+					Dois agrupamentos se diferenciam pela ordem, quando seus elementos são os mesmos,
+					nomeados em ordens diferentes.
+				</p>
+				<p>Exemplo: o número 231 se diferencia do número 213 (mesmos algarismo em diferenteordem).</p>
+				<p>
+					Dois agrupamentos se diferenciam pela natureza, quando pelo menos um elemento de um é
+					diferente dos elementos do outro.
+				</p>
+				<p>
+					Exemplo: 213 e 214 se diferenciam pela natureza de seus elementos, porque o algarismo 3 do
+					número 213 não é algarismo do número 214 e o algarismo 4 do número 214 não é elemento
+					do número 213.
+				</p>
+				<p>
+					Observação: Comparam-se dois a dois os a grupamentos de uma situação –problema de
+					Análise Combinatória quando se quer verificar se eles se diferenciam somente pela ordem,
+					omente pela natureza de seus elementos ou pela ordem e pela natureza de seus elementos.
+				</p>
+				<h4>OS PROBLEMAS DE CONTAGEM</h4>
+				<p>Vamos resolver outros problemas de contagem:</p>
+				<p>
+					Agora, vamos resolver os 6 problemas propostos a seguir que envolvem os conceitos de
+					Análise Combinatória. Leia-os com atenção e tente resolvê-los, procurando utilizar uma das
+					diferentes formas de representação apresentadas ou outras que você mesmo pode criar.
+				</p>
+				<p>
+					Depois de resolvê-los, confira os resultados os seus resultados com os problemas resolvidos
+					para, então, prosseguir explorando a seção (Re)construindo conhecimentos. É importante que
+					você se empenhe para resolver os problemas propostos para prosseguir os estudos de Análise
+					Combinatória.
+				</p>
+				<p>Resolva os problemas:</p>
+				<p>
+					1.Com três quadrados de cores diferentes (amarelo, azul e vermelho) e três triângulos de cores
+					diferentes (amarelo, azul e vermelho). Quantas casinhas diferentes podemos fazer? Observe
+					os materiais.	
+				</p>
+				<div class="img">
+					<img src="./images/image217.png" alt="">
+				</div>
+				<p>
+					2.Temos algumas placas de azulejo com os algarismos 1, 2, 3 e 4 escritos um em cada placa,
+					conforme modelos a seguir:
+				</p>
+				<div class="img">
+					<img src="./images/image218.png" alt="">
+				</div>
+				<p>
+					Quantas casas de um condomínio podemos numerar, usando três placas de azulejo?
+					3.Temos algumas placas de azulejo com os algarismos 1, 2 e 3 escritos um em cada placa,
+					conforme modelos a seguir:
+				</p>
+				<div class="img">
+					<img src="./images/image219.png" alt="">
+				</div>
+				<p>Quantos números diferentes podemos compor, usando três placas de azulejo?</p>
+				<p>
+					4.Com os algarismo 3, 4, 5 e 6 , quantos números diferentes de 3 algarismos podemos
+					compor?
+				</p>
+				<p>
+					5. Com 4 frutas diferentes, laranja, banana, mamão e pera, quantos tipos de sucos podemos
+					fazer com 3 frutas diferentes?
+				</p>
+				<p>
+					6. Com os números 1, 2, 3, 4, 5, quantos números de dois algarismos diferentes podemos
+					escrever?
+				</p>
+				<p>Conferindo as respostas.</p>
+				<p>
+					Agora que os problemas estão resolvidos, vamos conferir as respostas, observando as
+					diferentes representações utilizadas na sua resolução:
+				</p>
+				<p>
+					<b>Problema 1</b>: Com três quadrados de cores diferentes (amarelo, azul e vermelho) e três
+					triângulos de cores diferentes (amarelo, azul e vermelho). Quantas casinhas diferentes
+					podemos fazer?
+				</p>
+				<p>Resposta: Podemos fazer 9 casinhas diferentes.</p>
+				<p>Quadro de dupla entrada e diagrama de árvore	</p>
+				<div class="img">
+					<img src="./images/image220.png" alt="">
+				</div>
+				<p>
+					Observando o quadro de dupla entrada, o diagrama de árvore e a representação por etapas,
+					verificamos que, com três quadrados e três triângulos, podemos desenhar 9 casinhas
+					diferentes, fazendo o produto 3𝑥3 = 9.
+				</p>
+				<p>
+					Problema 2: Temos algumas placas de azulejo com os algarismos 1, 2, 3 e 4 escritos um em
+					cada placa.Quantas casas de um condomínio podemos numerar, usando três placas de azulejo
+					com números diferentes?
+				</p>
+				<p>Resposta: Podemos numerar 24 casas.</p>
+				<p>Diagrama de árvore:	</p>
+				<div class="img">
+					<img src="./images/image221.png" alt="">
+				</div>
+				<p>Representação por etapas:</p>
+				<div class="img">
+					<img src="./images/image222.png" alt="">
+				</div>
+				<p>
+					Verificamos no diagrama de árvores e na representação por etapas que podemos numerar 24
+					casas com três placas diferentes de azulejo numeradas com os algarismos de 1 a 4 sem repetir
+					algarismos nos números das casas, fazendo 4 x 3 x 2 = 24
+				</p>
+				<p>
+					Problema 3: Temos algumas placas de azulejo com os algarismos 1, 2, 3 escritos um em cada
+					placa. Quantos números diferentes podemos compor, usando duas placas de azulejo com
+					algarismos diferentes?
+				</p>
+				<p>Resposta: Podemos fazer 6 números diferentes .</p>
+				<p>Diagrama de árvore</p>	
+				<div class="img">
+					<img src="./images/image223.png" alt="">
+				</div>
+				<p>Representação por etapas	</p>
+				<div class="img">
+					<img src="./images/image224.png" alt="">
+				</div>
+				<p>
+					Verificamos no diagrama de árvore e na representação por etapas que podemos compor 6
+					números diferentes sem repetir algarismos, fazendo:
+				</p>
+				<div class="img">
+					<img src="./images/image225.png" alt="">
+				</div>
+				<p>4.Com os algarismos 1, 2, 3, 4 quantos números diferentes de 3 algarismos podemos compor?</p>
+				<p>Resultado: Podemos compor 64 números diferentes</p>
+				<p>	Diagrama de árvore	</p>	
+				<div class="img">
+					<img src="./images/image226.png" alt="">
+				</div>
+				<p>
+					Verificamos no diagrama de árvore e na representação por etapas que podemos compor 64
+					números diferentes porque podemos repetir algarismos em um número da seguinte forma: 4 x
+					4 x 4 = 64 números diferentes	
+				</p>
+				<p>
+					5. Com 4 frutas diferentes, laranja, banana, morango e pera, quantos tipos de sucos podemos
+					fazer com 3 frutas diferentes?
+				</p>
+				<p>Resposta: Podemos fazer 4 tipos diferentes de suco.</p>
+				<p>
+					6. Com os números 1, 2, 3, 4, 5, quantos números de dois algarismos diferentes podemos
+					escrever?
+				</p>
+				<p>
+					Observação: Nessa situação, um suco de laranja, banana e morango é o mesmo que um suco
+					de laranja, morango e banana, logo, dois agrupamentos quaisquer só se diferenciam pela
+					natureza dos seus elementos e nunca pela ordem. Um suco diferente de banana, laranja e
+					morango é, por exemplo, um suco de laranja, morango e pera variando pelo menos por uma
+					fruta.
+				</p>
+				<p>Resposta: Podemos fazer 4 sucos.</p>
+				<p>Diagrama de árvore</p>
+				<div class="img">
+					<img src="./images/image227.png" alt="">
+				</div>
+				<p>
+					Verificamos no diagrama de árvore que, que dos 24 sucos que poderíamos compor somente 4
+					são diferentes ( os que estão nos retângulos). Os demais (que não estão nos retângulos) são
+					repetidos. Assim, de cada 6 sucos encontrados em cada ponta de galho da árvore só vale 1.
+				</p>
+				<p>
+					Observe o quadro a seguir e verifique comparando-o com a árvore, que de cada 6
+					agrupamentos, somente vale 1.
+				</p> 
+				<div class="img">
+					<img src="./images/image228.png" alt="">
+				</div>
+				<p>
+					6. Com os algarismos 1, 2, 3, 4, 5, quantos números de 2 algarismos diferentes podemos
+					escrever?
+				</p>
+				<p>Resposta: Podemos fazer 20 números com algarismos diferentes.	</p>		
+				<p>Diagrama de árvore</p>
+				<div class="img">
+					<img src="./images/image229.png" alt="">
+				</div>
+				<p>Representação por etapas</p>
+				<div class="img">
+					<img src="./images/image230.png" alt="">
+				</div>
+				<p>
+					Verificamos no diagrama de árvore e na representação por etapas que podemos compor 20
+					números diferentes com dois algarismos diferentes utilizando os algarismos 1, 2, 3, 4, 5,
+					fazendo: 5 x 4 = 20 números diferentes
+				</p>
+				<p>
+					Os problemas trabalhados são problemas de contagem que foram resolvidos sem o uso de
+					fórmulas.
+				</p>
+				<p>RETOMANDO...</p>
+				<p>
+					Os problemas chamados especificamente de problemas de contagem, tratam dos
+					agrupamentos dos elementos de 2 ou mais conjuntos ou dos agrupamentos que envolvem os
+					elementos de apenas um conjunto, considerando a forma como esses elementos se agrupam,
+					classificam-se em Arranjos, as Permutações e as Combinações.
+				</p>
+				<p>
+					Nos problemas de Análise Combinatória o que efetivamente importa são os agrupamentos
+					mas quantos agrupamentos são formados
+				</p>
+				<h4>ARRANJOS	</h4>
+				<p>Vamos, agora, aprender o que são Arranjos, reconhecer a fórmula e resolver problemas.</p>
+				<p>
+					Arranjos são agrupamentos n elementos tomados p a p nos quais a ordem em que os
+					elementos estão dispostos nos agrupamentos faz a diferença se os compararmos 2 a 2.
+				</p>
+				<p>Assim, os arranjos são distintos entre si pela ordem ou pela natureza de seus elementos.</p>
+				<p>Existem dois tipos de Arranjos:</p>
+				<p>– Arranjo simples	</p>
+				<p>– Arranjo com repetição</p>
+				<p>
+					Nos problemas 2 e 6 trabalhamos com os agrupamentos que chamamos de arranjos simples.
+					No problema 2, relacionamos os elementos de um conjunto, o conjunto dos algarismos 1, 2,
+					3, 4, considerando que o número de cada casa deveria ter somente 3 algarismos diferentes.
+					Assim, usamos um único conjunto, fazendo agrupamentos em que o número de elementos dos
+					agrupamentos é menor do que o número de elementos do conjunto. Comparando os
+					agrupamentos dois a dois, verificamos, por exemplo, que o número 324 e o número 342 se
+					diferenciam pela ordem que os algarismos estão colocados no número. Se compararmos o
+					número 214 e o número 312 veremos que eles se diferenciam pela natureza de seus
+					elementos, isto é no número 214 não aparece o algarismo 3 que está no número 312 e que, no
+					número 312, não aparece o algarismo 4 que está no úmero 214. No problema 6, agrupamos 5
+					elementos dois a dois em que o número de elementos do conjunto (n) é maior do que o
+					número de elementos (p). Esse também é um problema de arranjo simples em que, os
+					elementos comparados 2 a 2 ora variam na natureza (exemplo, 13 e 23) ora variam na ordem
+					(12 e 21)
+				</p>
+				<p>Vejamos um exemplo de Arranjo simples, aqueles que não podem ter elementos repetidos.</p>
+				<p>
+					Consideremos os elementos 1, 2, 3. A partir desse número n de elementos, vamos formar
+					todos os números de dois algarismos distintos formandos números de 2 algarismos (tomados
+					p a p em que é 2).
+				</p>
+				<p>Observe a árvore de possibilidades:</p>
+				<div class="img">
+					<img src="./images/image231.png" alt="">
+				</div>	
+				
+				<p>
+				Observe que as possibilidades dos números formados como 2 algarismos distintos (os
+				algarismos não podem ser repetidos ), na primeira posição temos 3 algarismos e, na segunda,
+				somente a possibilidade de 2. Então, são 3 x 2 = 6 possibilidades ou seis números.
+				</p>
+				<p>Usando uma forma simplificada de resolução (resolução por etapas):</p>
+				<div class="img">
+					<img src="./images/image232.png" alt="">
+				</div>
+				<p>Os agrupamentos de 3 elementos 1, 2, 3 tomados 2 a 2 são 6: 12, 13, 21, 23, 31, 32.</p>
+				<p>
+					Se compararmos esses números dois a dois esses seis números, veremos que se diferenciam
+					pela ordem dos elementos 12 ≠ 21 (ordem), 12 ≠ 13 (natureza)
+				</p>
+				<div class="img">
+					<img src="./images/image233.png" alt="">
+				</div>
+
+				<h4>VAMOS PRATICAR...</h4>
+				<p>
+					5. Quantos números de dois algarismos diferentes (distintos) podem ser formados, usando os
+					elementos do conjunto {1,2,3}?
+				</p>
+				<p>
+					6. Em um campeonato de futebol participam 20 times. Quantos resultados são possíveis para
+					os três primeiros lugares?
+				</p>
+				<p>
+					7. Sete funcionários de uma firma são candidatos para ocupar os cargos de presidente e
+					tesoureiro do Centro Social. Sabendo que os 7 funcionários dão candidatos aos dois cargos,
+					de quantas maneiras podem ser os resultados finais?
+				</p>
+				<p>
+					8. Numa prova de natação, há 10 competidores. Somente os três primeiros receberão
+					medalhas. De quantas formas diferentes, os 10 nadadores poderão se colocar nos três lugares
+					do pódio?
+				</p>
+				<p><b>Vejamos agora Arranjos com repetição em que os elementos podem ser repetidos.</b></p>
+				<p>
+					No problema 4, relacionamos os elementos do conjunto A={3, 4, 5, 6} agrupando-os 3 a 3,
+					de tal modo que todos os números formados sejam diferentes. Como os algarismos podem se
+					repetir, temos números com 121 e 131 em que o 2 não aparece no 131 e o 3 não aparece no
+					121 logo, comparando-os, eles têm números de naturezas diferentes. Temos, também,
+					números com 234 e o 432 que tem os mesmos algarismos, as se diferenciam pela ordem dos
+					algarismos no numero e temos números como o 111 ou o 222. Esses agrupamentos são
+					arranjos com elementos repetidos.
+				</p>
+				<p>
+					Consideremos, agora, outro problema. A partir de um conjunto de com um determinado
+					número de n elementos, (1, 2, 3) , vamos formar todos os números de dois algarismos,
+					formandos números de 2 algarismos (tomados p a p em que é 2).
+				</p>
+				<p>
+						Observe que, na questão proposta, não indica que os algarismos, no número, devem ser
+						distintos. Assim tanto teremos os números 11 e 22, teremos os números 12 e 21.
+				</p>
+				<p>Observe a árvore de possibilidades que representa o princípio da contagem:</p>
+				<div class="img">
+					<img src="./images/image234.png" alt="">
+				</div>
+				<p>	Usando uma forma simplificada de resolução(representação por etapas :</p>
+				<div class="img">
+					<img src="./images/image235.png" alt="">
+				</div>
+				
+				<p>
+					A fórmula do arranjo com repetição: Ar (m, p) = m<sup>p</sup>
+	em que m é o número de elementos de
+	que dispomos e p é número de elementos que terá no arranjo.
+				</p>
+
+				<p>
+					Veja outros problemas, resolvidos com o uso de fórmulas: Quantos números de 3 algarismos
+					diferentes (distintos) podem ser formados, usando os algarismos 1, 2, 3, 4, 5 ?
+				</p>
+				<p>Sabemos que m = 5 e p = 3</p>
+				<p>
+					Ar = m<sup>p</sup>
+					= 5<sup>3</sup>
+					= 5 x 5 x 5 = 125
+				</p>
+				<p>
+					Por exemplo: seja C = (A, B, C, D). Os arranjos com repetição desses 4 elementos tomados 2
+					a 2 formam 16 grupos onde encontramos elementos repetidos em cada grupo, pois todos os
+					agrupamentos estão no conjunto:
+				</p>
+				<p>Ar = (AA, AB, AC, AD, BA, BB, BC, BD, CA, CB, CC, CD, DA, DB, DC, DD)</p>
+				<p>Nesse caso, m = 4 e p = 2</p>
+				<p>
+					Ar = m<sup>p</sup>
+					= 4<sup>2</sup>
+					= 4 x 4 = 16
+				</p>
+				<h4>COMBINAÇÕES </h4>
+
+				<p>
+									Combinação é um tipo de agrupamento formado com os elementos de um conjunto em que
+					os elementos dos agrupamentos diferenciarem apenas pela sua natureza dos seus elementos.
+				</p>
+				<p>
+					O problema 5 que resolvemos é um exemplo de problema de combinação. No problema 5,
+					agrupamos os elementos de um conjunto de quatro frutas A={Laranja , banana, morango e
+					pera} para fazer sucos diferentes com 3 frutas. Como o suco com banana, laranja e pera é o
+					mesmo do que o suco pera, laranja e banana , dos dois agrupamentos vale somente um.
+					Nesse caso, a ordem dos elementos nos agrupamentos os diferencia. Assim, das 6
+					possibilidade que se tem no diagrama de árvore somente 4 são diferentes: as 24 possibilidades 
+					94
+					reduziram-se a 4 sucos diferentes. Esses agrupamentos que só se diferenciam pela natureza
+					dos elementos são as combinações.
+				</p>
+				<p>
+					Vejamos outro exemplo: Considerando o conjunto B ={A,B,C,D} formados por 4 pontos que
+					não pertence, à mesma reta. Qual a quantidade de triângulos que podemos formar?
+				</p>
+				<p>Resolução do problema</p>
+				<p>
+					formar triângulos utilizando 3 pontos não colineares. Se destacarmos dois agrupamentos
+					formados teremos: ABC e BCA, esses são triângulos formados com os mesmos pontos, mas
+					em ordens diferentes que torna os triângulos iguais. Portanto, os agrupamentos formados
+					nesse exercício são combinações.
+				</p>
+				<p>
+					As combinações podem ser consideradas um tipo particular de arranjo simples, pois os
+					agrupamentos formados nos arranjos são diferenciados pela ordem e pela natureza dos seus
+					elementos. A combinação são os agrupamentos diferenciados apenas pela natureza de seus
+					elementos. Considerando o exemplo acima veja todas as possibilidades de triângulos
+					formados com os quatro pontos não colineares:
+				</p>
+				<div class="img">
+					<img src="./images/image236.png" alt="">
+				</div>
+				<p>
+					Percebemos que há vários agrupamentos que se diferem pela ordem de seus elementos, esses
+					representam o mesmo triângulo, por isso que consideramos esse exercício como sendo uma
+					combinação simples, assim a quantidade de combinações simples que os 4 pontos não
+					colineares (A,B,C,D), tomados 3 a 3 irão formar será 4, pois os seus agrupamentos se diferem
+					pela natureza de seus elementos e não pela ordem.
+					Para encontrar essa q
+				</p>
+				<p>
+					Para encontrar essa quantidade de agrupamentos formados em uma combinação, utilizamos a
+					seguinte fórmula:
+
+				</p>	
+				<p>
+					Percebemos que há vários agrupamentos que se diferem pela ordem de seus elementos, esses
+				representam o mesmo triângulo, por isso que consideramos esse exercício como sendo uma
+				combinação simples, assim a quantidade de combinações simples que os 4 pontos não
+				colineares (A,B,C,D), tomados 3 a 3 irão formar será 4, pois os seus agrupamentos se diferem
+				pela natureza de seus elementos e não pela ordem. 
+							</p>
+					<p>
+								Para encontrar essa quantidade de agrupamentos formados em uma combinação, utilizamos a
+				seguinte fórmula:
+					</p>
+					<p><img src="./images/image237.png" alt="" class="unformat"></p>
+					<p>
+						em que, n é a quantidade de elementos de um conjunto
+						p é um número natural menor ou igual a n, que representa a quantidade de
+						elementos que irão formar os agrupamentos.
+						Substituindo os dados acima na fórmula teremos:
+						No caso vamos calcular C<sub>4,3</sub> = 4 em que n = 4 e p = 3
+					</p>
+					<p>Substituindo na fórmula temos:</p>
+					<p><img src="./images/image238.png" alt="" class="unformat"></p>
+					<h4>VAMOS PRATICAR...</h4>
+					<p>17. Quantas comissões de 3 pessoas podemos formar num grupo de 7 pessoas?</p>
+					<p>
+						18. Em um plano existem quatro pontos distintos dos quais não há três colineares. Quantas
+						retas ficam determinadas?
+					</p>
+					<p>
+						19. Quantas diagonais tem um hexágono? Lembre que diagonais são segmentos de reta que
+						ligam dois vértices não consecutivos de uma figura geométrica plana.
+					</p>
+				<p>
+						20. Quantos sopas diferentes podemos fazer com 5 ingredientes (cenoura, batata, abóbora,
+						couve e milho), usando 3 ingredientes, sendo que dispomos de 2 tipos de caldos: um de carne
+						e outro de galinha.?
+				</p>
+				<h4>PRATICANDO...AÇÃO E REFLEXÃO</h4>
+				<p>
+					1.Quantos números de 3 algarismos distintos, podemos compor com os algarismos do
+					conjunto A= ( 1, 2, 3, 4, 5, 6)?
+				</p>
+			<p>
+					2.Entre as cidades A e B há seis estradas, e entre as cidades B e C há quatro estradas. Não há
+					estrada ligando diretamente A e C.
+			</p>
+				<p>
+					a) De quantas maneiras diferentes pode-se ir de A até C, passando por B? <br>
+					b) De quantas maneiras pode-se ir de A até C, passando por B e voltar de C até A, passando por B,
+					sem usar na volta as estradas usadas na ida?
+				</p>
+				<p>
+					3.Quantas equipes de trabalho poderão ser formadas num grupo de dez indivíduos, devendo cada
+					equipe ser constituída por um coordenador, um secretário e um digitador, sabendo que os dez
+					indivíduos são digitadores?.
+				</p>
+				<p>
+					4.Um técnico de um time de voleibol possui a sua disposição 15 jogadores que podem jogar
+					em qualquer posição. Sabendo que, numa equipe de voleibol, tem 6 jogadores, de quantas
+					maneira ele poderá escalar sua equipe?
+					</p>
+					<p>
+						5.Um amigo mostrou-me 5 livros diferentes de matemática e 7 livros diferentes de física e
+	
+						
+		
+						permitiu-me escolher um de cada. De quantas maneiras esta escolha pode ser feita?
+					</p>
+					<p>
+						6) De quantas maneiras diferentes podemos organizar num fileira horizontal 6 fotos de
+						pessoas diferentes em um painel?
+					</p>
+		
+					<p>
+						7) Com duas letras A e B e 5 números diferentes, quantas placas de bicicleta que tenham uma
+						letra e 4 algarismos podemos compor?
+					</p>
+	
+					<p>8) De quantas formas diferentes, podemos dispor as letras da palavra Pilates?</p>
+					<h4>O QUE APRENDI</h4>
+					<p>
+											Nesse capítulo, foram trabalhadas as formas de calcular o número de agrupamentos de
+						números, de letras, de cores, de pontos, obedecendo a diferentes condições, chamados
+						arranjos, permutações e combinações. Usamos o princípio fundamental da contagem e suas
+						diferentes representações. Aprendemos o que é um fatorial.
+					</p>
+					<p>
+						No esquema a seguir, temos diferentes tipos de agrupamentos diferenciados a partir da
+						natureza ou da ordem que os compõem, bem como suas fórmulas de cálculo.
+					</p>
+					<div class="img">
+						<img src="./images/image239.png" alt="">
+					</div>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
